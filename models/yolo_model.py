@@ -33,4 +33,4 @@ def detect_objects(img):
         if det is not None and len(det):
             for *xyxy, conf, cls in det:
                 labels.append(model.names[int(cls)])
-    return ', '.join(set(labels)) if labels else 'No obstacles detected'd'
+    return ', '.join(set(labels)) if labels else 'No obstacles detected'
