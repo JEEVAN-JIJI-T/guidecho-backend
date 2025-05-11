@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models.yolo_model import detect_objects
+from app_models.yolo_model import detect_objects
 import base64
 import cv2
 import numpy as np
