@@ -6,7 +6,7 @@ import sys
 yolov5_path = Path(__file__).parent / 'yolov5'
 sys.path.insert(0, str(yolov5_path))
 
-from models.common import DetectMultiBackend
+from yolov5.models.common import DetectMultiBackend
 from utils.datasets import LoadImages
 from utils.general import (non_max_suppression, scale_coords)
 from utils.torch_utils import select_device
