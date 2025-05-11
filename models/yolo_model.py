@@ -8,9 +8,11 @@ yolov5_path = Path(__file__).parent / 'yolov5'
 sys.path.insert(0, str(yolov5_path))
 
 # Import YOLOv5 utilities
-from models.common import DetectMultiBackend
-from utils.general import non_max_suppression
-from utils.torch_utils import select_device
+from yolov5.models.common import DetectMultiBackend
+from yolov5.utils.datasets import LoadImages
+from yolov5.utils.general import non_max_suppression, scale_coords
+from yolov5.utils.torch_utils import select_device
+
 
 # Load model
 weights = yolov5_path / 'yolov5s.pt'
